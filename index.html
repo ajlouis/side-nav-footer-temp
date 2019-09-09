@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>John Global</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="home">
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <a href="home"><img style="width:100%;"src="img/logo.png" alt="logo"/></a>
+        </div>
+        <ul class="nav" id="nav">
+          <li><a class="navLinks" data-scroll href="#home">Home</a></li>
+          <li><a class="navLinks" data-scroll href="#about">About</a></li>
+          <li><a class="navLinks" data-scroll href="#services">Services</a></li>
+          <li><a class="navLinks" data-scroll href="#industries">Testimonials</a></li>
+          <li><a class="navLinks" data-scroll href="#from-blog">Blog</a></li>
+          <li><a class="navLinks" data-scroll href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- mobile side nav -->
+    <nav class="mobile">
+      <div class="m-side-bar">
+        <img src="img/logo.png" alt="" />
+        <ul class="mobile__items">
+          <li class="mobile__item"><a href="#">Home</a></li>
+          <li class="mobile__item"><a href="#">Promotions</a></li>
+          <li class="mobile__item"><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- whatsapp contact -->
+    <div
+      class="whatsapp"
+      style="position: fixed; right: 0.5rem; bottom: 4.5rem; z-index: 1"
+    >
+      <a
+        href="https://api.whatsapp.com/send?phone=2349019562622"
+        target="_blank"
+      >
+        <img src="img/whatsapp.png" alt=""
+      /></a>
+    </div>
+
+    <!-- footer mobile -->
+    <div class="footer-mobile">
+      <nav class="hamburger nav-item">
+        <button class="hamburger__button">
+          <span class="hamburger__button-bar"></span>
+          <span class="hamburger__button-bar"></span>
+          <span class="hamburger__button-bar"></span>
+        </button>
+        <p>menu</p>
+      </nav>
+      <nav class="nav-item">
+        <img src="img/bingos.png" alt="" />
+        <p>About</p>
+      </nav>
+      <nav class="nav-item">
+        <img src="img/slots-new.png" alt="" />
+        <p>Services</p>
+      </nav>
+      <nav class="nav-item">
+        <img src="img/how-to-play-new.png" alt="" />
+        <p>Contact</p>
+      </nav>
+      <nav class="nav-item">
+        <img src="img/help-new.png" alt="" />
+        <p>Support</p>
+      </nav>
+    </div>
+
+    <!-- mobile nave script -->
+    <script>
+      const navSlide = () => {
+        const hamburger = document.querySelector(".hamburger__button");
+        const mobile = document.querySelector(".mobile");
+
+        // toggle Nav
+        hamburger.addEventListener("click", () => {
+          mobile.classList.toggle("open");
+        });
+        mobile.addEventListener("click", () => {
+          mobile.classList.toggle("open");
+        });
+      };
+      navSlide();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </body>
+</html>
